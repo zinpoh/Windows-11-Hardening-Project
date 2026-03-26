@@ -2,11 +2,11 @@
 
 
 
-\[!\[MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
-\[!\[Kali Linux](https://img.shields.io/badge/Kali-Linux-blue)](https://www.kali.org/)
-
-\[!\[Windows 11](https://img.shields.io/badge/Windows-11-blue)](https://www.microsoft.com/windows)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Kali Linux](https://img.shields.io/badge/Kali-Linux-blue)](https://www.kali.org/)
+[![Windows 11](https://img.shields.io/badge/Windows-11-blue)](https://www.microsoft.com/windows)
+[![PowerShell](https://img.shields.io/badge/PowerShell-5.1+-blue)](https://docs.microsoft.com/en-us/powershell/)
+[![Gobuster](https://img.shields.io/badge/Gobuster-3.8+-orange)](https://github.com/OJ/gobuster)
 
 
 
