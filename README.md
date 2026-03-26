@@ -369,29 +369,29 @@ foreach ($path in $paths) {
 ## Resultados Esperados
 
 # Antes del Hardening
--Directorios web expuestos (/Microsoft/, /LogFiles/)
--WebDAV habilitado
--Servicios HTTP accesibles
+- Directorios web expuestos (/Microsoft/, /LogFiles/)
+- WebDAV habilitado
+- Servicios HTTP accesibles
 
 # Después del Hardening
 
--Acceso denegado a directorios sensibles
--WebDAV deshabilitado
--Firewall bloqueando accesos no autorizados
+- Acceso denegado a directorios sensibles
+- WebDAV deshabilitado
+- Firewall bloqueando accesos no autorizados
 
 ## 📚 Referencias
 # MITRE ATT&CK Framework
--T1083 - File and Directory Discovery
--T1046 - Network Service Scanning
--T1505 - Server Software Component
+- T1083 - File and Directory Discovery
+- T1046 - Network Service Scanning
+- T1505 - Server Software Component
 
 # NIST Cybersecurity Framework
--NIST SP 800-53
+- NIST SP 800-53
 
 # Herramientas Utilizadas
 
--Gobuster
--SecLists
+- Gobuster
+- SecLists
 
 ### ⚠️ Aviso Legal
-Este material es solo para fines educativos. Realiza auditorías solo en sistemas que posees o para los que tienes autorización explícita.
+## Este material es solo para fines educativos. Realiza auditorías solo en sistemas que posees o para los que tienes autorización explícita.
