@@ -125,6 +125,7 @@ sudo apt install gobuster seclists curl -y
 \# Verificar instalación
 
 gobuster --version
+```
 
 
 
