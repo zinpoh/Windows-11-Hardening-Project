@@ -198,6 +198,7 @@ Los resultados de Gobuster muestran:
 
 Código HTTP	Significado	Riesgo
 | Código HTTP | Significado | Riesgo |
+|-------------|-------------|--------|
 | 200 OK |	Recurso existe y es accesible |	🔴 Alto |
 | 301/302 |	Redirección - El recurso existe |	🟠 Medio |
 | 403 | Forbidden	Existe pero acceso denegado | 🟡 Información |
@@ -208,6 +209,7 @@ Código HTTP	Significado	Riesgo
 # 3.2 Vulnerabilidades Comunes en Windows 11 por Defecto
 
 | Vulnerabilidad |	Descripción |	Severidad	| MITRE ID |
+|----------------|--------------|-----------|----------|
 | Listado de Directorios |	IIS/WebDAV expone estructura de archivos |	Alta |	T1083 |
 | WebDAV Habilitado |	Compartición web no segura |	Alta |	T1505 |
 | Archivos de Respuesta |	Archivos .bak, .old expuestos |	Media |	T1083 |
@@ -220,6 +222,7 @@ Código HTTP	Significado	Riesgo
 Controles de Seguridad Aplicados
 
 | Control NIST |	Categoría |	Descripción |	Implementación |
+|--------------|------------|-------------|----------------|
 | AC-3 |	Access Enforcement |	Control de acceso a recursos |	Restricción de permisos NTFS |
 | CM-6 |	Configuration Settings |	Configuración segura |	Hardening de servicios |
 | SC-7 |	Boundary Protection |	Protección de perímetro |	Reglas de firewall |
