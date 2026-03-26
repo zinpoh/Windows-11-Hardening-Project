@@ -10,27 +10,27 @@
 
 
 
-\## Tabla de Contenidos
+## Tabla de Contenidos
 
-\- \[Descripción](#descripción)
+- [Descripción](#descripción)
 
-\- \[Arquitectura del Proyecto](#arquitectura-del-proyecto)
+- [Arquitectura del Proyecto](#arquitectura-del-proyecto)
 
-\- \[Metodología de Ataque (MITRE ATT\&CK)](#metodología-de-ataque-mitre-attck)
+- [Metodología de Ataque (MITRE ATT\&CK)](#metodología-de-ataque-mitre-attck)
 
-\- \[Fase 1: Instalación de Herramientas](#fase-1-instalación-de-herramientas)
+- [Fase 1: Instalación de Herramientas](#fase-1-instalación-de-herramientas)
 
-\- \[Fase 2: Enumeración con Gobuster](#fase-2-enumeración-con-gobuster)
+- [Fase 2: Enumeración con Gobuster](#fase-2-enumeración-con-gobuster)
 
-\- \[Fase 3: Análisis de Vulnerabilidades](#fase-3-análisis-de-vulnerabilidades)
+- [Fase 3: Análisis de Vulnerabilidades](#fase-3-análisis-de-vulnerabilidades)
 
-\- \[Metodología de Defensa (NIST SP 800-53)](#metodología-de-defensa-nist-sp-800-53)
+- [Metodología de Defensa (NIST SP 800-53)](#metodología-de-defensa-nist-sp-800-53)
 
-\- \[Fase 4: Hardening de Seguridad](#fase-4-hardening-de-seguridad)
+- [Fase 4: Hardening de Seguridad](#fase-4-hardening-de-seguridad)
 
-\- \[Fase 5: Verificación](#fase-5-verificación)
+- [Fase 5: Verificación](#fase-5-verificación)
 
-\- \[Referencias](#referencias)
+- [Referencias](#referencias)
 
 
 
