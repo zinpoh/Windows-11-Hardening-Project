@@ -131,9 +131,9 @@ gobuster --version
 
 
 
-Fase 2: Enumeración con Gobuster
+## Fase 2: Enumeración con Gobuster
 
-2.1 Escaneo Básico de Directorios
+# 2.1 Escaneo Básico de Directorios
 ```bash
 # Escaneo con diccionario común
 
@@ -148,7 +148,7 @@ Explicación de parámetros:
 -u: URL objetivo (IP de la máquina Windows)
 -w: Wordlist o diccionario a utilizar
 
-2.2 Escaneo con Extensiones de Archivo
+# 2.2 Escaneo con Extensiones de Archivo
 ```bash
 # Buscar archivos con extensiones peligrosas
 gobuster dir -u http://{ip_victim} -w /usr/share/wordlists/dirb/common.txt -x php,html,txt,bak,zip,log,config,ini
@@ -163,17 +163,14 @@ Extensiones comunes vulnerables:
 -.zip - Archivos comprimidos
 
 
-
-
-
-2.3 Escaneo con Mayor Velocidad
+# 2.3 Escaneo con Mayor Velocidad
 
 ```bash
 # Aumentar threads para escaneo más rápido
 gobuster dir -u http://{ip\_victim} -w /usr/share/wordlists/dirb/common.txt -t 50
 ```
 
-2.4 Escaneo Sigiloso (Menos Detectable)
+# 2.4 Escaneo Sigiloso (Menos Detectable)
 
 # Escaneo con delay y pocos threads
 ```bash
@@ -183,7 +180,7 @@ gobuster dir -u http://{ip\_victim} -w /usr/share/wordlists/dirb/common.txt
   --useragent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 ```
 
-2.5 Guardar Resultados
+# 2.5 Guardar Resultados
 ```
 # Guardar resultados en archivo
 gobuster dir -u http://{ip\_victim} -w /usr/share/wordlists/dirb/common.txt -o resultados.txt
@@ -192,15 +189,15 @@ gobuster dir -u http://{ip\_victim} -w /usr/share/wordlists/dirb/common.txt -o r
 cat resultados.txt
 ```
 
-2.6 Escaneo con Wordlist Personalizada
+# 2.6 Escaneo con Wordlist Personalizada
 ```
 # Usar SecLists (wordlist más completa)
 gobuster dir -u http://{ip\_victim} -w /usr/share/seclists/Discovery/Web-Content/common.txt -x php,asp,aspx,config
 ```
 
-Fase 3: Análisis de Vulnerabilidades
+## Fase 3: Análisis de Vulnerabilidades
 
-3.1 Interpretación de Resultados
+# 3.1 Interpretación de Resultados
 Los resultados de Gobuster muestran:
 
 Código HTTP	Significado	Riesgo
@@ -215,7 +212,7 @@ Código HTTP	Significado	Riesgo
 
 
 
-3.2 Vulnerabilidades Comunes en Windows 11 por Defecto
+# 3.2 Vulnerabilidades Comunes en Windows 11 por Defecto
 
 | Vulnerabilidad |	Descripción |	Severidad	| MITRE ID
 
@@ -229,7 +226,7 @@ Código HTTP	Significado	Riesgo
 
 
 
-#Fase 4: Metodología de Defensa (NIST SP 800-53)
+## Fase 4: Metodología de Defensa (NIST SP 800-53)
 
 Controles de Seguridad Aplicados
 
@@ -244,11 +241,9 @@ Controles de Seguridad Aplicados
 | SI-4 |	System Monitoring |	Monitoreo de seguridad |	Logs y alertas |
 
 
+## Fase 5: Hardening de Seguridad
 
-#Fase 5: Hardening de Seguridad
-
-
-5.1 Script de Protección para Windows 11
+# 5.1 Script de Protección para Windows 11
 
 Ejecutar en PowerShell como Administrador:
 ```bash
@@ -322,7 +317,7 @@ Write-Host "✅ Hardening completado con éxito" -ForegroundColor Green
 
 ```
 
-5.2 Ejecutar el Script
+# 5.2 Ejecutar el Script
 
 ```bash
 # En Windows 11 como Administrador
@@ -330,7 +325,19 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 cd C:\Users\Administrator\Desktop
 .\protect_windows.ps1
 ```
-6.2 Script de Verificación en Windows
+## ✅ Fase 6: Verificación
+# 6.1 Desde Kali Linux - Verificar Protección
+```bash
+# Verificar que los directorios ya no son accesibles
+curl -I http://{ip_victim}/Microsoft/
+# Esperado: Connection Refused o 403 Forbidden
+
+# Verificar puertos cerrados
+nmap -p 80 {ip_victim}
+# Esperado: filtered o closed
+```
+
+# 6.2 Script de Verificación en Windows
 ```bash
 # scripts/verify.ps1
 Write-Host "Verificando hardening..." -ForegroundColor Cyan
@@ -386,5 +393,5 @@ foreach ($path in $paths) {
 -Gobuster
 -SecLists
 
-# ⚠️ Aviso Legal
+### ⚠️ Aviso Legal
 Este material es solo para fines educativos. Realiza auditorías solo en sistemas que posees o para los que tienes autorización explícita.
